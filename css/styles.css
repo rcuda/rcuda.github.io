@@ -148,12 +148,21 @@ body
     margin-bottom:0px;
     }
 
-    
     body
     {
         font-size: 14px;
     }
     
+    #bannerText
+    {
+        font-size: 14px;
+    }
+    
+    .iconText
+    {
+    text-align:right;
+    font-size:12px;
+    }
    
 }
 
