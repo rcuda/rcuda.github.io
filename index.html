@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Illunio - Commute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <script>
+    </script>
+</head>
+<body id="top">
+    <div id="nav_desktop" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid" style="padding:6px 30px 6px 30px"> <!--padding same as h2-->
+            <div class="navbar-header">
+              <a id="logo" href="index.html" class="navbar-brand"><img style="height:46px;margin-top:-15px;" src="img/logo.png" class="" alt="icon"></a>
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-left">
+                <!--<li><a href="">My Portfolio</a></li>-->
+            </ul> 
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">My Portfolio</a></li>
+                <li><a href="" target="_blank"><img src="img/facebook.png" alt="fb" style="margin-top:-4px;"></a></li>
+                <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <div class="container-fluid" style="margin-top:55px;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 bannerText" id="bannerText">
+                Thank you Julie for supporting Good Return.</br>
+            Your portfolio is currently funding 12 projects and changing the lives of 160 people.</br>
+                Saying yes to ending poverty is as easy as saying no every now and then.</br>
+                What can you forego, for good, today?
+            </div>
+        </div>
+            <div id="foregoHeading" style="margin-top:20px;"class="col-xs-12 col-sm-12 col-md-12">
+                I WILL FOREGO
+            </div>
+<div id="squareGrid">
+    <div class="square">
+    <div class="content">
+        <div class="table">
+            <div id="coffee" class="table-cell" onclick="PopulateModal('Coffee', '5')">
+                <div class="iconText">$5</div>
+                <img class="iconblack" src="img/Coffe_Cup_Outline_512.png" alt="coffee">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="square">
+    <div class="content">
+        <div class="table">
+            <div id="wine" class="table-cell" onclick="PopulateModal('Wine', '25')">
+                <div class="iconText">$25</div>
+                <img class="iconblack" src="img/Wine_bottle_512.png" alt="coffee">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="square">
+    <div class="content">
+        <div class="table">
+            <div id="taxi" class="table-cell" onclick="PopulateModal('Taxi', '50')">
+                <div class="iconText">$50</div>
+                <img class="iconblack" src="img/Taxi_512.png" alt="coffee">
+            </div>
+        </div>
+    </div>
+    </div>
+     <div class="square">
+    <div class="content">
+        <div class="table">
+            <div id="food" class="table-cell" onclick="PopulateModal('Food', '45')">
+                <div class="iconText">$45</div>
+                <img class="iconblack" src="img/Restaurant_interface_symbol_of_fork_and_knife_couple_512.png" alt="coffee">
+            </div>
+        </div>
+    </div>
+    </div>
+     <div class="square">
+    <div class="content">
+        <div class="table">
+            <div id="clothes" class="table-cell" onclick="PopulateModal('Clothes', '100')">
+                <div class="iconText">$100</div>
+                <img class="iconblack" src="img/Clothing_hanger_512.png" alt="coffee">
+            </div>
+        </div>
+    </div>
+    </div>
+     <div class="square">
+    <div class="content">
+        <div class="table">
+            <div id="travel" class="table-cell" onclick="PopulateModal('Travel', '250')">
+                <div class="iconText">$250</div>
+                <img class="iconblack" src="img/Travelling_luggage_512.png" alt="coffee">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div style="margin-bottom:30px;" id="foregoHeading" class="col-xs-12 col-sm-12 col-md-12">
+                FOR GOOD
+</div>
+    </div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="text-align:center;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="img/Circle_with_check_symbol_128.png" style="padding-top:20px;padding-bottom:20px;" alt="tick">
+          <h3 style="font-weight:bold;" id="modalTitle" class="modal-title">SUCCESS!</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modalDescription" style="text-align:center; font-size:18px;">
+            Your investment of <span id="price">0</span> has been recieved.</br></br><a href="">VIEW PORTFOLIO</a>
+          </p>
+          <div id="modalImages"></div>
+      </div>
+      <div class="modal-footer">
+          <button id="closeInterest" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+</div>
+
+    </body>
+</html>
