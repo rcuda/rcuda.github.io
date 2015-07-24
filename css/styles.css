@@ -163,6 +163,11 @@ body
     text-align:right;
     font-size:12px;
     }
+    
+    #foregoHeading
+    {
+        font-size:18px;
+    }
    
 }
 
