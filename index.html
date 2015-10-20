@@ -109,6 +109,12 @@
     </div>
     </div>
 </div>
+
+    <!--extra--><div>
+        <input type="button" class="btn btn-default" value="Submit" onclick="$('#myForm').modal('show');"/>
+     </div>
+
+
 <div style="margin-bottom:20px;margin-top:20px;" id="foregoHeading" class="col-xs-12 col-sm-12 col-md-12">
 FOR GOOD
 </div>
@@ -135,6 +141,56 @@ FOR GOOD
     </div>
     </div>
 </div>
+
+<div class="modal fade" id="myForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="text-align:center;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 style="font-weight:bold;" id="modalTitle2" class="modal-title">Please complete enquiry</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modalDescription2" style="text-align:center; font-size:18px;">
+            <form id="form">
+                <div class="form-group">
+                  <label for="category">Category</label>
+                  <select class="form-control" id="category">
+                    <option>Invoices</option>
+                    <option>Change Existing Service</option>
+                    <option>New Service</option>
+                    <option>Add new site</option>
+                    <option>Edit busniness info</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="text" value="0433120928" class="form-control" id="exampleInputEmail1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail12">Email</label>
+                    <input type="text" class="form-control" id="exampleInputEmail12" value="test@reactive.com">
+                      
+                 </div>
+                <div class="form-group">
+                  <label for="contact">Prefered Contact Method</label>
+                  <select class="form-control" id="contact">
+                    <option>Email</option>
+                    <option>Phone</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                <label for="comment">Comments</label>
+                <textarea class="form-control" rows="5"id="comment">Hi, I'd like to make an enquiry about invoice #9383923..</textarea>
+                </div>
+                  <button type="button" onclick="SubmitForm()" class="btn btn-default">Submit</button>
+            </form>
+        </p>
+      </div>
+    </div>
+    </div>
+</div>
+
 
     </body>
 </html>
